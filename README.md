@@ -27,7 +27,7 @@
 
 ---
 
-## ⚠️ Disclaimer | 免责声明
+## ⚠️ Disclaimer 
 
 This project was developed as part of my Final Year Project at Multimedia University.  
 All code and designs in this repository are my own work.
