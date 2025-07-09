@@ -34,6 +34,7 @@ All code and designs in this repository are my own work.
 All restaurant names and data shown in this app are used for informational and demonstration purposes only.  
 This app is not affiliated with, endorsed by, or officially connected to any of the mentioned restaurant brands.  
 Halal status information is retrieved based on publicly available data or user-contributed reports.
+
 ---
 
 ## 📄 License
