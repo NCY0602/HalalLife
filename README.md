@@ -20,7 +20,7 @@ Year: 2025**
 
 ---
 
-📌 Tools Used:
+## 📌 Tools Used:
 - Android Studio Hedgehog (Version 2023.1.1 or above)
 - Kotlin Programming Language
 - Jetpack Compose (for UI)
@@ -31,7 +31,7 @@ Year: 2025**
 
 ---
 
-📦 How to Run:
+## 📦 How to Run:
 
 1. Clone the GitHub Repository:
    https://github.com/NCY0602/HalalLife
@@ -49,6 +49,65 @@ Year: 2025**
 
 5. Run the App:
    - Use Android Emulator (API 33+) or real device.
+
+---
+
+## 📂 Database:
+
+This app uses Firebase Firestore as its cloud NoSQL database.
+
+As Firestore is a secure online service, direct public access is not provided for data security.
+
+However, the Firestore collections are structured as follows:
+
+- users (Collection)
+   └── {userId} (Document)
+         ├── favourites (Subcollection of restaurants)
+         ├── recentViews (Subcollection of restaurants)
+         └── userProfile fields (email, username, uid)
+
+- restaurants (Collection)
+   └── {restaurantId} (Document)
+         ├── name
+         ├── logoUrl
+         ├── location, latitude, longitude
+         └── halalCertificate (status, certBody, expiryDate, refNo)
+
+- reviews (Collection)
+   └── {reviewId} (Document)
+         ├── comments
+         ├── id
+         ├── rating
+         ├── restaurantId
+         ├── restaurantName
+         ├── timestamp
+         └── userId
+
+- products (Collection)
+└── {productId} (Document)
+      ├── productId
+      ├── productName
+      ├── category
+      ├── expiryDate 
+      ├── restaurantId 
+      ├── restaurantName 
+      ├── proUrl
+      └── ingredients (Array)
+          ├── 0
+          │   ├── name
+          │   └── manufacturer
+          │       ├── name
+          │       ├── halalStatus
+          │       ├── certificationBody
+          │       └── referenceNumber
+          └── ...
+
+---
+
+## 🧪 Firebase Access:
+
+This app connects to Firebase using project-specific credentials in `google-services.json`.  
+For security reasons, this file is not publicly exposed.
 
 ---
 
