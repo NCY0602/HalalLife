@@ -1,4 +1,7 @@
 # HalalLife – Restaurants' Halal Certificate Verification App
+**Developer: Ng Chai Yen
+Institution: Multimedia University (MMU)
+Year: 2025**
 
 ## 📱 Overview 
 
@@ -17,13 +20,35 @@
 
 ---
 
-## 🔧 Tech Stack
+📌 Tools Used:
+- Android Studio Hedgehog (Version 2023.1.1 or above)
+- Kotlin Programming Language
+- Jetpack Compose (for UI)
+- Firebase (Authentication, Firestore, Storage)
+- ZXing (QR Code Scanning)
+- Google Maps API
+- Emulator: Android Emulator (API Level 33+) or Physical Android Device
 
-- Android Studio + Kotlin + Jetpack Compose  
-- Firebase (Auth, Firestore, Storage)  
-- ZXing QR Scanner  
-- Google Maps API  
-- Figma (UI Design)
+---
+
+📦 How to Run:
+
+1. Clone the GitHub Repository:
+   https://github.com/NCY0602/HalalLife
+
+2. Open with Android Studio.
+
+3. Download Dependencies:
+   - Firebase SDK will auto-sync via Gradle.
+   - ZXing: Already included in build.gradle.
+   - Google Services plugin already configured.
+
+4. Add Google Services JSON:
+   - Add your own `google-services.json` from Firebase Console if running new project.
+   - Otherwise, clone project as-is to test (demo environment).
+
+5. Run the App:
+   - Use Android Emulator (API 33+) or real device.
 
 ---
 
