@@ -57,50 +57,10 @@
 This app uses Firebase Firestore as its cloud NoSQL database.
 
 As Firestore is a secure online service, direct public access is not provided for data security.
+This project uses a self-collected dataset exported from Firebase Firestore, which has been uploaded to Kaggle.
 
-However, the Firestore collections are structured as follows:
-
-- users (Collection)
-   └── {userId} (Document)
-         ├── favourites (Subcollection of restaurants)
-         ├── recentViews (Subcollection of restaurants)
-         └── userProfile fields (email, username, uid)
-
-- restaurants (Collection)
-   └── {restaurantId} (Document)
-         ├── name
-         ├── logoUrl
-         ├── location, latitude, longitude
-         └── halalCertificate (status, certBody, expiryDate, refNo)
-
-- reviews (Collection)
-   └── {reviewId} (Document)
-         ├── comments
-         ├── id
-         ├── rating
-         ├── restaurantId
-         ├── restaurantName
-         ├── timestamp
-         └── userId
-
-- products (Collection)
-└── {productId} (Document)
-      ├── productId
-      ├── productName
-      ├── category
-      ├── expiryDate 
-      ├── restaurantId 
-      ├── restaurantName 
-      ├── proUrl
-      └── ingredients (Array)
-          ├── 0
-          │   ├── name
-          │   └── manufacturer
-          │       ├── name
-          │       ├── halalStatus
-          │       ├── certificationBody
-          │       └── referenceNumber
-          └── ...
+Dataset Name: HalalLife – Firestore Exported Data  
+Kaggle Link: https://www.kaggle.com/datasets/ngchaiyen/halallife
 
 ---
 
