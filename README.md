@@ -1,7 +1,7 @@
 # HalalLife – Restaurants' Halal Certificate Verification App
-**Developer: Ng Chai Yen
-Institution: Multimedia University (MMU)
-Year: 2025**
+**Developer: Ng Chai Yen**
+**Institution: Multimedia University (MMU)**
+**Year: 2025**
 
 ## 📱 Overview 
 
